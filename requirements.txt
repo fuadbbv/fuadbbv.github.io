@@ -1,0 +1,6 @@
+jupyter
+nbclient
+nbformat
+pandas
+matplotlib
+psutil
