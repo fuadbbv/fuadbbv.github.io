@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Fuad Babaiev",
+    "section": "",
+    "text": "My name is Fuad and I am a student at Boston University, currently working on an MS in Financial Management with a concentration in AI applications.\n\n\n\nimport platform\nimport pandas as pd\n\npd.DataFrame({\n    \"component\": [\"Python\", \"Operating system\", \"Architecture\"],\n    \"value\": [\n        platform.python_version(),\n        f\"{platform.system()} {platform.release()}\",\n        platform.machine(),\n    ],\n})\n\n\n\nTable 1: Runtime environment\n\n\n\n\n\n\n\n\n\n\ncomponent\nvalue\n\n\n\n\n0\nPython\n3.14.4\n\n\n1\nOperating system\nLinux 7.0.0-1006-aws\n\n\n2\nArchitecture\nx86_64"
+  },
+  {
+    "objectID": "index.html#reproducible-environment",
+    "href": "index.html#reproducible-environment",
+    "title": "Fuad Babaiev",
+    "section": "",
+    "text": "import platform\nimport pandas as pd\n\npd.DataFrame({\n    \"component\": [\"Python\", \"Operating system\", \"Architecture\"],\n    \"value\": [\n        platform.python_version(),\n        f\"{platform.system()} {platform.release()}\",\n        platform.machine(),\n    ],\n})\n\n\n\nTable 1: Runtime environment\n\n\n\n\n\n\n\n\n\n\ncomponent\nvalue\n\n\n\n\n0\nPython\n3.14.4\n\n\n1\nOperating system\nLinux 7.0.0-1006-aws\n\n\n2\nArchitecture\nx86_64"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
