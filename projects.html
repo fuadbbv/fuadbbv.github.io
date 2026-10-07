@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Fuad Babaiev</title>
+<title>Projects – Fuad Babaiev</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -40,6 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -96,11 +97,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link active" href="./projects.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -136,62 +137,96 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="images/fuad.jpg" class="about-image
-  rounded " style="width: 15em;">
+<main class="content" id="quarto-document-content">
+
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Fuad Babaiev</h1>
-<p class="subtitle lead">Senior Project Manager in financial services, with an entrepreneurial background and a focus on fintech, AI and automation</p>
+<h1 class="title">Projects</h1>
 </div>
+
+
+
 <div class="quarto-title-meta">
+
+    
+  
+    
   </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://www.linkedin.com/in/fuad-babaiev" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/fuadbbv" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="mailto:fuadbabaiev@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="/files/Fuad_Babaiev_CV.pdf" class="about-link" rel="" target="">
-    <i class="bi bi-file-earmark-pdf"></i>
-     <span class="about-link-text">CV (PDF)</span>
-  </a>
+
+
+<p>Selected work from my MS in Financial Management at Boston University, followed by highlights from my professional projects.</p>
+<section id="academic-projects" class="level2">
+<h2 class="anchored" data-anchor-id="academic-projects">Academic projects</h2>
+<div class="project">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/model_comparison.png" class="img-fluid figure-img" alt="Four scatter plots comparing actual and predicted salaries for linear, polynomial and random forest models, plus a residual plot"></p>
+<figcaption>Actual versus predicted salary for three models</figcaption>
+</figure>
 </div>
-  </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>I am a project manager who started as an entrepreneur. After earning my LLB and LLM in International Law in Ukraine, I built and ran businesses in several niches: a lounge café, retail, an aviation travel agency, and a B2B and B2C logistics company that sourced cars from US insurance auctions (Copart, IAAI, Manheim) and handled everything through to delivery in Ukraine. In 2013 I co-founded UkrExchange, one of Ukraine’s first bitcoin-to-fiat exchanges, and later delivered a crypto mining infrastructure project.</p>
-<p>I then moved into project management with remote, cross-functional teams, delivering web applications and software in e-commerce, education, media and AI. After the full-scale war began in 2022, I relocated to Ireland and completed a Postgraduate Diploma in Global Capital Markets at Ulster University.</p>
-<p>In the United States I joined the City of Portland, Maine, as Senior IT Project Manager. I led infrastructure, cybersecurity and enterprise systems projects and built the IT department’s PMO guidelines from scratch.</p>
-<p>To move into the financial domain, I enrolled in the MS in Financial Management (AI Applications) at Boston University, where I study AI and generative AI, blockchain, corporate finance, financial regulation and big data analytics. Fintech and blockchain are the areas I want to work in.</p>
-<p>Today I am a Senior Project Manager (contract) at MassMutual, in the Global Business Services workforce planning team. I automate reporting for executive leadership and build automated data-cleaning and data-quality solutions.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
+<section id="salary-prediction-with-pyspark-ml" class="level3">
+<h3 class="anchored" data-anchor-id="salary-prediction-with-pyspark-ml">Salary prediction with PySpark ML</h3>
+<p><span class="meta">Big Data and Cloud Analytics, Boston University, 2026</span></p>
+<p>Predicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models.</p>
 <ul>
-<li><strong>Boston University</strong> — MS in Financial Management (AI Applications), 2025–2027</li>
-<li><strong>Ulster University</strong> — PG Diploma, Global Capital Markets (Fintech Management), 2022–2023</li>
-<li><strong>National Law Academy of Ukraine</strong> — LLB and LLM, International Law, 2008–2013</li>
+<li>Random forest: test R² 0.54, RMSE about $46,000</li>
+<li>Experience has a strongly diminishing return, flattening after about 12 years</li>
+<li>Diagnosed and avoided the perfect multicollinearity in the starter template</li>
 </ul>
+<p><strong>Tools:</strong> PySpark MLlib, AWS EC2, Python, Seaborn, Quarto</p>
 </section>
-<section id="certifications" class="level2">
-<h2 data-anchor-id="certifications">Certifications</h2>
-<p>PMP, SAFe Agilist, CSPO, PSM I, PRINCE2, Blockchain for Business and Finance</p>
-
-
-</section>
-</main></div>
 </div>
- <!-- /main -->
+<div class="project">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/rf_feature_importance.png" class="img-fluid figure-img" alt="Bar chart of random forest feature importance, led by experience at 52.7 percent and education level at 18.9 percent"></p>
+<figcaption>Top 10 features by random forest importance</figcaption>
+</figure>
+</div>
+<section id="what-drives-pay-in-job-postings" class="level3">
+<h3 class="anchored" data-anchor-id="what-drives-pay-in-job-postings">What drives pay in job postings</h3>
+<p><span class="meta">Big Data and Cloud Analytics, Boston University, 2026</span></p>
+<p>Feature importance from the random forest model. Required experience explains just over half of the model’s predictive power, followed by education level and occupation group, with computing roles paying the most.</p>
+<p>The regression models agree on the same drivers and add direction and size: about $19,000 for the first year of experience, falling to about $4,000 by year ten.</p>
+</section>
+</div>
+<div class="project single">
+<section id="career-market-analysis-securities-and-investments" class="level3">
+<h3 class="anchored" data-anchor-id="career-market-analysis-securities-and-investments">Career market analysis: securities and investments</h3>
+<p><span class="meta">Group project, Big Data and Cloud Analytics, Boston University, 2026</span></p>
+<p>Analysed 7,074 job postings in the US securities and investments industry to identify the skills, locations and role variants that open entry into business intelligence and data analyst careers. I led site structure, integration and publishing, and documented four data defects we found and repaired in the source data.</p>
+<p><a href="https://fuadbbv.github.io/ad688-career-evaluation-group1/" class="btn btn-cv">Visit the project website</a></p>
+</section>
+</div>
+</section>
+<section id="professional-highlights" class="level2">
+<h2 class="anchored" data-anchor-id="professional-highlights">Professional highlights</h2>
+<div class="highlights">
+<ul>
+<li><strong>Executive reporting automation (MassMutual):</strong> automated recurring hiring, headcount and budget reports with the ServiceNow API, Power Automate and Tableau, saving about two days of manual work per reporting cycle.</li>
+<li><strong>Data integrity checker:</strong> designed an automated validation system that flags incomplete records, finds the accountable owner and sends targeted correction requests.</li>
+<li><strong>HaloITSM implementation (City of Portland):</strong> led the enterprise rollout of a service management platform for 1,500+ users without operational disruption.</li>
+<li><strong>UkrExchange:</strong> co-founded one of Ukraine’s first bitcoin-to-fiat exchanges and automated fiat settlement through local banking APIs.</li>
+</ul>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
