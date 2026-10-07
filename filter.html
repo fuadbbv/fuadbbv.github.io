@@ -1,0 +1,15 @@
+<script>
+(function () {
+  var buttons = document.querySelectorAll(".filters button");
+  var cards = document.querySelectorAll(".pcard");
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var f = btn.getAttribute("data-filter");
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+      cards.forEach(function (c) {
+        c.hidden = !(f === "all" || c.getAttribute("data-cat") === f);
+      });
+    });
+  });
+})();
+</script>

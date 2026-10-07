@@ -1,60 +1,157 @@
 ---
 title: "Projects"
+subtitle: "Data and AI work from my MS at Boston University, and the professional projects behind my career."
+include-after-body: filter.html
+page-layout: full
+body-classes: projects-page
 ---
 
-Selected work from my MS in Financial Management at Boston University, followed by highlights from my professional projects.
+```{=html}
+<div class="filters" role="group" aria-label="Filter projects">
+  <button type="button" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" data-filter="data" aria-pressed="false">Data and AI</button>
+  <button type="button" data-filter="pro" aria-pressed="false">Professional</button>
+</div>
+```
 
-## Academic projects
+::::: {.pgrid}
 
-::: {.project}
-![Actual versus predicted salary for three models](images/model_comparison.png){fig-alt="Four scatter plots comparing actual and predicted salaries for linear, polynomial and random forest models, plus a residual plot"}
+:::: {.pcard data-cat="data"}
+![](images/model_comparison.png){fig-alt="Scatter plots of actual versus predicted salary for linear, polynomial and random forest models, plus a residual plot"}
 
-::: {}
 ### Salary prediction with PySpark ML
 
-[Big Data and Cloud Analytics, Boston University, 2026]{.meta}
+[Big Data and Cloud Analytics, Boston University, 2026]{.where}
 
-Predicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models.
+Predicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models. The random forest reached a test R² of 0.54; experience showed a strongly diminishing return after about 12 years.
 
-- Random forest: test R² 0.54, RMSE about \$46,000
-- Experience has a strongly diminishing return, flattening after about 12 years
-- Diagnosed and avoided the perfect multicollinearity in the starter template
+[PySpark MLlib, AWS EC2, Python, Seaborn, Quarto]{.tools}
+::::
 
-**Tools:** PySpark MLlib, AWS EC2, Python, Seaborn, Quarto
-:::
-:::
+:::: {.pcard data-cat="data"}
+![](images/rf_feature_importance.png){fig-alt="Bar chart of random forest feature importance, led by experience at 52.7 percent"}
 
-::: {.project}
-![Top 10 features by random forest importance](images/rf_feature_importance.png){fig-alt="Bar chart of random forest feature importance, led by experience at 52.7 percent and education level at 18.9 percent"}
-
-::: {}
 ### What drives pay in job postings
 
-[Big Data and Cloud Analytics, Boston University, 2026]{.meta}
+[Big Data and Cloud Analytics, Boston University, 2026]{.where}
 
-Feature importance from the random forest model. Required experience explains just over half of the model's predictive power, followed by education level and occupation group, with computing roles paying the most.
+Required experience explains just over half of the model's predictive power, followed by education level and occupation, with computing roles paying the most.
 
-The regression models agree on the same drivers and add direction and size: about \$19,000 for the first year of experience, falling to about \$4,000 by year ten.
-:::
-:::
+[Random forest, feature importance]{.tools}
+::::
 
-::: {.project .single}
-::: {}
+:::: {.pcard data-cat="data"}
+[7,074]{.metric}
+
+[job postings analysed]{.metric-label}
+
 ### Career market analysis: securities and investments
 
-[Group project, Big Data and Cloud Analytics, Boston University, 2026]{.meta}
+[Group project, Boston University, 2026]{.where}
 
-Analysed 7,074 job postings in the US securities and investments industry to identify the skills, locations and role variants that open entry into business intelligence and data analyst careers. I led site structure, integration and publishing, and documented four data defects we found and repaired in the source data.
+Which skills, locations and role variants open entry into BI and data analyst careers in US securities and investments. I led site structure, integration and publishing, and documented four data defects we repaired.
 
-[Visit the project website](https://fuadbbv.github.io/ad688-career-evaluation-group1/){.btn .btn-cv}
-:::
-:::
+[Visit the project website](https://fuadbbv.github.io/ad688-career-evaluation-group1/)
 
-## Professional highlights
+[Python, pandas, Quarto, GitHub Pages]{.tools}
+::::
 
-::: {.highlights}
-- **Executive reporting automation (MassMutual):** automated recurring hiring, headcount and budget reports with the ServiceNow API, Power Automate and Tableau, saving about two days of manual work per reporting cycle.
-- **Data integrity checker:** designed an automated validation system that flags incomplete records, finds the accountable owner and sends targeted correction requests.
-- **HaloITSM implementation (City of Portland):** led the enterprise rollout of a service management platform for 1,500+ users without operational disruption.
-- **UkrExchange:** co-founded one of Ukraine's first bitcoin-to-fiat exchanges and automated fiat settlement through local banking APIs.
-:::
+:::: {.pcard data-cat="data"}
+[Mesa]{.metric}
+
+[agent-based simulation]{.metric-label}
+
+### Agent-based financial modeling
+
+[AI Agents and Automation, Boston University]{.where}
+
+Built agent-based simulations to test how trading strategies and market participants interact, and analysed the simulated scenarios in Python.
+
+[Python, Mesa, pandas, matplotlib]{.tools}
+::::
+
+:::: {.pcard data-cat="pro"}
+[~2 days]{.metric}
+
+[of manual work saved per reporting cycle]{.metric-label}
+
+### Executive reporting automation
+
+[MassMutual, Global Business Services, 2026]{.where}
+
+Automated recurring hiring, headcount and budget reporting: data pulled from the ServiceNow API, orchestrated in Power Automate and published as self-service Tableau dashboards for leadership.
+
+[ServiceNow API, Power Automate, Tableau, Copilot]{.tools}
+::::
+
+:::: {.pcard data-cat="pro"}
+[Self-correcting]{.metric}
+
+[data-quality loop]{.metric-label}
+
+### Data integrity checker
+
+[MassMutual, 2026]{.where}
+
+Designed a validation system that checks every record against business rules, finds the accountable owner and emails a targeted correction request, with a KPI tracker measuring how fast gaps get fixed.
+
+[Python, Excel, business-rule validation]{.tools}
+::::
+
+:::: {.pcard data-cat="pro"}
+[1,500+]{.metric}
+
+[users moved to one ITSM platform]{.metric-label}
+
+### HaloITSM implementation
+
+[City of Portland, Maine, 2023–2026]{.where}
+
+Led the enterprise rollout of a new service management platform: vendor engagement, workflow and catalog design, data migration, cutover and stabilization without operational disruption.
+
+[HaloITSM, ITIL, change management]{.tools}
+::::
+
+:::: {.pcard data-cat="pro"}
+[CJIS]{.metric}
+
+[compliant MFA for police systems]{.metric-label}
+
+### Multi-factor authentication for the police department
+
+[City of Portland, Maine]{.where}
+
+Translated CJIS and FIPS 140-2 requirements into a phased rollout of hardware and mobile MFA for dispatchers and officers, with break-glass procedures and zero downtime during critical hours.
+
+[CJIS, FIPS 140-2, identity management]{.tools}
+::::
+
+:::: {.pcard data-cat="pro"}
+[2013]{.metric}
+
+[bitcoin-to-fiat, before the playbooks existed]{.metric-label}
+
+### UkrExchange
+
+[Co-founder and product manager]{.where}
+
+Co-founded one of Ukraine's first BTC-to-fiat exchanges. Designed trading and settlement workflows and integrated local banking APIs to automate fiat deposits and withdrawals.
+
+[Order books, settlement, KYC/AML, banking APIs]{.tools}
+::::
+
+:::: {.pcard data-cat="pro"}
+[$500K+]{.metric}
+
+[mining infrastructure delivered]{.metric-label}
+
+### Crypto mining infrastructure
+
+[Independent project, 2017–2022]{.where}
+
+Took an ASIC and GPU mining operation from vendor sourcing and facility build-out to launch, with minute-level revenue and cost dashboards and a hosted-mining revenue stream.
+
+[ASIC/GPU, mining pools, P&L dashboards]{.tools}
+::::
+
+:::::

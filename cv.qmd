@@ -4,7 +4,7 @@ title: "Curriculum Vitae"
 
 Senior Project and Program Manager delivering technology and business transformation in regulated environments: financial services, municipal government and fintech. My background combines enterprise governance, startup delivery with distributed engineering teams, and founder experience in crypto and logistics.
 
-[Download CV (PDF)](files/Fuad_Babaiev_CV.pdf){.btn .btn-cv download="Fuad_Babaiev_CV.pdf"}
+[Download CV (PDF)](files/Fuad_Babaiev_CV.pdf){.btn-solid .btn-dark download="Fuad_Babaiev_CV.pdf"}
 
 ```{=html}
 <object class="cv-frame" data="files/Fuad_Babaiev_CV.pdf" type="application/pdf">

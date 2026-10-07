@@ -1,0 +1,51 @@
+<script>
+(function () {
+  var chain = document.getElementById("chain");
+  if (!chain) return;
+  var blocks = chain.querySelectorAll(".block");
+
+  // Tiny FNV-1a hash so every block gets a stable, block-specific "hash"
+  function fnv(str) {
+    var h = 0x811c9dc5;
+    for (var i = 0; i < str.length; i++) {
+      h ^= str.charCodeAt(i);
+      h = Math.imul(h, 0x01000193) >>> 0;
+    }
+    return ("00000000" + h.toString(16)).slice(-8);
+  }
+
+  var prev = "00000000";
+  var hashes = [];
+  blocks.forEach(function (b) {
+    var h = fnv(prev + b.textContent);
+    hashes.push({ el: b.querySelector(".hash"), text: "0x" + h + " ← 0x" + prev });
+    prev = h;
+  });
+
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduce) {
+    hashes.forEach(function (x) { x.el.textContent = x.text; });
+    return;
+  }
+
+  // One orchestrated moment: blocks are mined one after another
+  var hex = "0123456789abcdef";
+  function scramble(target, el, done) {
+    var frames = 0;
+    var timer = setInterval(function () {
+      frames++;
+      el.textContent = target.split("").map(function (c) {
+        return /[0-9a-f]/.test(c) ? hex[Math.floor(Math.random() * 16)] : c;
+      }).join("");
+      if (frames > 8) { clearInterval(timer); el.textContent = target; if (done) done(); }
+    }, 45);
+  }
+
+  chain.classList.add("is-building");
+  blocks.forEach(function (b, i) {
+    var delay = i * 260;
+    b.style.animationDelay = delay + "ms";
+    setTimeout(function () { scramble(hashes[i].text, hashes[i].el); }, delay + 150);
+  });
+})();
+</script>
