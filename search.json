@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Senior Project and Program Manager delivering technology and business transformation in regulated environments: financial services, municipal government and fintech. My background combines enterprise governance, startup delivery with distributed engineering teams, and founder experience in crypto and logistics.\nDownload CV (PDF)\n\n  Your browser cannot display the PDF here.\n  Download the CV instead."
+    "text": "I am open to conversations about project and program management roles in fintech, digital assets and financial services, and about collaboration on AI and automation projects.\nfuadbabaiev@gmail.com\n\nLinkedIn: linkedin.com/in/fuad-babaiev\nGitHub: github.com/fuadbbv\nLocation: Boston, Massachusetts"
   },
   {
     "objectID": "projects.html",
@@ -14,11 +14,11 @@
     "text": "All\n  Data and AI\n  Professional\n\n\n\n\n\nSalary prediction with PySpark ML\nBig Data and Cloud Analytics, Boston University, 2026\nPredicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models. The random forest reached a test R² of 0.54; experience showed a strongly diminishing return after about 12 years.\nPySpark MLlib, AWS EC2, Python, Seaborn, Quarto\n\n\n\n\n\nWhat drives pay in job postings\nBig Data and Cloud Analytics, Boston University, 2026\nRequired experience explains just over half of the model’s predictive power, followed by education level and occupation, with computing roles paying the most.\nRandom forest, feature importance\n\n\n\n7,074\njob postings analysed\n\nCareer market analysis: securities and investments\nGroup project, Boston University, 2026\nWhich skills, locations and role variants open entry into BI and data analyst careers in US securities and investments. I led site structure, integration and publishing, and documented four data defects we repaired.\nVisit the project website\nPython, pandas, Quarto, GitHub Pages\n\n\n\nMesa\nagent-based simulation\n\nAgent-based financial modeling\nAI Agents and Automation, Boston University\nBuilt agent-based simulations to test how trading strategies and market participants interact, and analysed the simulated scenarios in Python.\nPython, Mesa, pandas, matplotlib\n\n\n\n~2 days\nof manual work saved per reporting cycle\n\nExecutive reporting automation\nMassMutual, Global Business Services, 2026\nAutomated recurring hiring, headcount and budget reporting: data pulled from the ServiceNow API, orchestrated in Power Automate and published as self-service Tableau dashboards for leadership.\nServiceNow API, Power Automate, Tableau, Copilot\n\n\n\nSelf-correcting\ndata-quality loop\n\nData integrity checker\nMassMutual, 2026\nDesigned a validation system that checks every record against business rules, finds the accountable owner and emails a targeted correction request, with a KPI tracker measuring how fast gaps get fixed.\nPython, Excel, business-rule validation\n\n\n\n1,500+\nusers moved to one ITSM platform\n\nHaloITSM implementation\nCity of Portland, Maine, 2023–2026\nLed the enterprise rollout of a new service management platform: vendor engagement, workflow and catalog design, data migration, cutover and stabilization without operational disruption.\nHaloITSM, ITIL, change management\n\n\n\nCJIS\ncompliant MFA for police systems\n\nMulti-factor authentication for the police department\nCity of Portland, Maine\nTranslated CJIS and FIPS 140-2 requirements into a phased rollout of hardware and mobile MFA for dispatchers and officers, with break-glass procedures and zero downtime during critical hours.\nCJIS, FIPS 140-2, identity management\n\n\n\n2013\nbitcoin-to-fiat, before the playbooks existed\n\nUkrExchange\nCo-founder and product manager\nCo-founded one of Ukraine’s first BTC-to-fiat exchanges. Designed trading and settlement workflows and integrated local banking APIs to automate fiat deposits and withdrawals.\nOrder books, settlement, KYC/AML, banking APIs\n\n\n\n$500K+\nmining infrastructure delivered\n\nCrypto mining infrastructure\nIndependent project, 2017–2022\nTook an ASIC and GPU mining operation from vendor sourcing and facility build-out to launch, with minute-level revenue and cost dashboards and a hosted-mining revenue stream.\nASIC/GPU, mining pools, P&L dashboards"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "I am open to conversations about project and program management roles in fintech, digital assets and financial services, and about collaboration on AI and automation projects.\nfuadbabaiev@gmail.com\n\nLinkedIn: linkedin.com/in/fuad-babaiev\nGitHub: github.com/fuadbbv\nLocation: Boston, Massachusetts"
+    "text": "Senior Project and Program Manager delivering technology and business transformation in regulated environments: financial services, municipal government and fintech. My background combines enterprise governance, startup delivery with distributed engineering teams, and founder experience in crypto and logistics.\nDownload CV (PDF)\n\n  Your browser cannot display the PDF here.\n  Download the CV instead."
   },
   {
     "objectID": "index.html",
