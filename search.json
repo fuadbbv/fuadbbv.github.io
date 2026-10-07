@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "I am open to conversations about project and program management roles in fintech, digital assets and financial services, and about collaboration on AI and automation projects.\n\nEmail: fuadbabaiev@gmail.com\nLinkedIn: linkedin.com/in/fuad-babaiev\nGitHub: github.com/fuadbbv\nLocation: Boston, Massachusetts"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Selected work from my MS in Financial Management at Boston University, followed by highlights from my professional projects."
-  },
-  {
-    "objectID": "projects.html#academic-projects",
-    "href": "projects.html#academic-projects",
-    "title": "Projects",
-    "section": "Academic projects",
-    "text": "Academic projects\n\n\n\n\nActual versus predicted salary for three models\n\n\n\nSalary prediction with PySpark ML\nBig Data and Cloud Analytics, Boston University, 2026\nPredicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models.\n\nRandom forest: test R² 0.54, RMSE about $46,000\nExperience has a strongly diminishing return, flattening after about 12 years\nDiagnosed and avoided the perfect multicollinearity in the starter template\n\nTools: PySpark MLlib, AWS EC2, Python, Seaborn, Quarto\n\n\n\n\n\n\nTop 10 features by random forest importance\n\n\n\nWhat drives pay in job postings\nBig Data and Cloud Analytics, Boston University, 2026\nFeature importance from the random forest model. Required experience explains just over half of the model’s predictive power, followed by education level and occupation group, with computing roles paying the most.\nThe regression models agree on the same drivers and add direction and size: about $19,000 for the first year of experience, falling to about $4,000 by year ten.\n\n\n\n\nCareer market analysis: securities and investments\nGroup project, Big Data and Cloud Analytics, Boston University, 2026\nAnalysed 7,074 job postings in the US securities and investments industry to identify the skills, locations and role variants that open entry into business intelligence and data analyst careers. I led site structure, integration and publishing, and documented four data defects we found and repaired in the source data.\nVisit the project website"
-  },
-  {
-    "objectID": "projects.html#professional-highlights",
-    "href": "projects.html#professional-highlights",
-    "title": "Projects",
-    "section": "Professional highlights",
-    "text": "Professional highlights\n\n\nExecutive reporting automation (MassMutual): automated recurring hiring, headcount and budget reports with the ServiceNow API, Power Automate and Tableau, saving about two days of manual work per reporting cycle.\nData integrity checker: designed an automated validation system that flags incomplete records, finds the accountable owner and sends targeted correction requests.\nHaloITSM implementation (City of Portland): led the enterprise rollout of a service management platform for 1,500+ users without operational disruption.\nUkrExchange: co-founded one of Ukraine’s first bitcoin-to-fiat exchanges and automated fiat settlement through local banking APIs."
-  },
-  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "Curriculum Vitae",
@@ -35,18 +7,39 @@
     "text": "Senior Project and Program Manager delivering technology and business transformation in regulated environments: financial services, municipal government and fintech. My background combines enterprise governance, startup delivery with distributed engineering teams, and founder experience in crypto and logistics.\nDownload CV (PDF)\n\n  Your browser cannot display the PDF here.\n  Download the CV instead."
   },
   {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "All\n  Data and AI\n  Professional\n\n\n\n\n\nSalary prediction with PySpark ML\nBig Data and Cloud Analytics, Boston University, 2026\nPredicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models. The random forest reached a test R² of 0.54; experience showed a strongly diminishing return after about 12 years.\nPySpark MLlib, AWS EC2, Python, Seaborn, Quarto\n\n\n\n\n\nWhat drives pay in job postings\nBig Data and Cloud Analytics, Boston University, 2026\nRequired experience explains just over half of the model’s predictive power, followed by education level and occupation, with computing roles paying the most.\nRandom forest, feature importance\n\n\n\n7,074\njob postings analysed\n\nCareer market analysis: securities and investments\nGroup project, Boston University, 2026\nWhich skills, locations and role variants open entry into BI and data analyst careers in US securities and investments. I led site structure, integration and publishing, and documented four data defects we repaired.\nVisit the project website\nPython, pandas, Quarto, GitHub Pages\n\n\n\nMesa\nagent-based simulation\n\nAgent-based financial modeling\nAI Agents and Automation, Boston University\nBuilt agent-based simulations to test how trading strategies and market participants interact, and analysed the simulated scenarios in Python.\nPython, Mesa, pandas, matplotlib\n\n\n\n~2 days\nof manual work saved per reporting cycle\n\nExecutive reporting automation\nMassMutual, Global Business Services, 2026\nAutomated recurring hiring, headcount and budget reporting: data pulled from the ServiceNow API, orchestrated in Power Automate and published as self-service Tableau dashboards for leadership.\nServiceNow API, Power Automate, Tableau, Copilot\n\n\n\nSelf-correcting\ndata-quality loop\n\nData integrity checker\nMassMutual, 2026\nDesigned a validation system that checks every record against business rules, finds the accountable owner and emails a targeted correction request, with a KPI tracker measuring how fast gaps get fixed.\nPython, Excel, business-rule validation\n\n\n\n1,500+\nusers moved to one ITSM platform\n\nHaloITSM implementation\nCity of Portland, Maine, 2023–2026\nLed the enterprise rollout of a new service management platform: vendor engagement, workflow and catalog design, data migration, cutover and stabilization without operational disruption.\nHaloITSM, ITIL, change management\n\n\n\nCJIS\ncompliant MFA for police systems\n\nMulti-factor authentication for the police department\nCity of Portland, Maine\nTranslated CJIS and FIPS 140-2 requirements into a phased rollout of hardware and mobile MFA for dispatchers and officers, with break-glass procedures and zero downtime during critical hours.\nCJIS, FIPS 140-2, identity management\n\n\n\n2013\nbitcoin-to-fiat, before the playbooks existed\n\nUkrExchange\nCo-founder and product manager\nCo-founded one of Ukraine’s first BTC-to-fiat exchanges. Designed trading and settlement workflows and integrated local banking APIs to automate fiat deposits and withdrawals.\nOrder books, settlement, KYC/AML, banking APIs\n\n\n\n$500K+\nmining infrastructure delivered\n\nCrypto mining infrastructure\nIndependent project, 2017–2022\nTook an ASIC and GPU mining operation from vendor sourcing and facility build-out to launch, with minute-level revenue and cost dashboards and a hosted-mining revenue stream.\nASIC/GPU, mining pools, P&L dashboards"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "I am open to conversations about project and program management roles in fintech, digital assets and financial services, and about collaboration on AI and automation projects.\nfuadbabaiev@gmail.com\n\nLinkedIn: linkedin.com/in/fuad-babaiev\nGitHub: github.com/fuadbbv\nLocation: Boston, Massachusetts"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Fuad Babaiev",
     "section": "",
-    "text": "I am a project manager who started as an entrepreneur. After earning my LLB and LLM in International Law in Ukraine, I built and ran businesses in several niches: a lounge café, retail, an aviation travel agency, and a B2B and B2C logistics company that sourced cars from US insurance auctions (Copart, IAAI, Manheim) and handled everything through to delivery in Ukraine. In 2013 I co-founded UkrExchange, one of Ukraine’s first bitcoin-to-fiat exchanges, and later delivered a crypto mining infrastructure project.\nI then moved into project management with remote, cross-functional teams, delivering web applications and software in e-commerce, education, media and AI. After the full-scale war began in 2022, I relocated to Ireland and completed a Postgraduate Diploma in Global Capital Markets at Ulster University.\nIn the United States I joined the City of Portland, Maine, as Senior IT Project Manager. I led infrastructure, cybersecurity and enterprise systems projects and built the IT department’s PMO guidelines from scratch.\nTo move into the financial domain, I enrolled in the MS in Financial Management (AI Applications) at Boston University, where I study AI and generative AI, blockchain, corporate finance, financial regulation and big data analytics. Fintech and blockchain are the areas I want to work in.\nToday I am a Senior Project Manager (contract) at MassMutual, in the Global Business Services workforce planning team. I automate reporting for executive leadership and build automated data-cleaning and data-quality solutions."
+    "text": "Senior Project Manager in financial services\n      \n      I turn complex technology and finance initiatives into delivered results, from a bitcoin exchange in 2013 to executive reporting automation at a Fortune 500 insurer today.\n      \n        See my projects\n        Download CV"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Fuad Babaiev",
+    "section": "About me",
+    "text": "About me\nI am a project manager who started as an entrepreneur. After earning my LLB and LLM in International Law in Ukraine, I built and ran businesses in several niches: a lounge café, retail, an aviation travel agency, and a B2B and B2C logistics company that sourced cars from US insurance auctions (Copart, IAAI, Manheim) and handled everything through to delivery in Ukraine. In 2013 I co-founded UkrExchange, one of Ukraine’s first bitcoin-to-fiat exchanges, and later delivered a crypto mining infrastructure project.\nI then moved into project management with remote, cross-functional teams, delivering web applications and software in e-commerce, education, media and AI. After the full-scale war began in 2022, I relocated to Ireland and completed a Postgraduate Diploma in Global Capital Markets at Ulster University.\nIn the United States I joined the City of Portland, Maine, as Senior IT Project Manager. I led infrastructure, cybersecurity and enterprise systems projects and built the IT department’s PMO guidelines from scratch.\nTo move into the financial domain, I enrolled in the MS in Financial Management (AI Applications) at Boston University, where I study AI and generative AI, blockchain, corporate finance, financial regulation and big data analytics. Fintech and blockchain are the areas I want to work in.\nToday I am a Senior Project Manager (contract) at MassMutual, in the Global Business Services workforce planning team. I automate reporting for executive leadership and build automated data-cleaning and data-quality solutions."
   },
   {
     "objectID": "index.html#education",
     "href": "index.html#education",
     "title": "Fuad Babaiev",
     "section": "Education",
-    "text": "Education\n\nBoston University — MS in Financial Management (AI Applications), 2025–2027\nUlster University — PG Diploma, Global Capital Markets (Fintech Management), 2022–2023\nNational Law Academy of Ukraine — LLB and LLM, International Law, 2008–2013"
+    "text": "Education\n\nBoston University: MS in Financial Management (AI Applications), 2025–2027\nUlster University: PG Diploma, Global Capital Markets (Fintech Management), 2022–2023\nNational Law Academy of Ukraine: LLB and LLM, International Law, 2008–2013"
   },
   {
     "objectID": "index.html#certifications",

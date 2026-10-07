@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-69465f07f78a320a56139b6025886c58.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-d9d8057e252ec2b7a48c3907fead1afe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed projects-page quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -132,21 +132,22 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Projects</h1>
+<p class="subtitle lead">Data and AI work from my MS at Boston University, and the professional projects behind my career.</p>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -158,66 +159,131 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Selected work from my MS in Financial Management at Boston University, followed by highlights from my professional projects.</p>
-<section id="academic-projects" class="level2">
-<h2 class="anchored" data-anchor-id="academic-projects">Academic projects</h2>
-<div class="project">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/model_comparison.png" class="img-fluid figure-img" alt="Four scatter plots comparing actual and predicted salaries for linear, polynomial and random forest models, plus a residual plot"></p>
-<figcaption>Actual versus predicted salary for three models</figcaption>
-</figure>
+<div class="filters" role="group" aria-label="Filter projects">
+  <button type="button" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" data-filter="data" aria-pressed="false">Data and AI</button>
+  <button type="button" data-filter="pro" aria-pressed="false">Professional</button>
 </div>
+<div class="pgrid">
+<div class="pcard" data-cat="data">
+<p><img src="images/model_comparison.png" class="img-fluid" alt="Scatter plots of actual versus predicted salary for linear, polynomial and random forest models, plus a residual plot"></p>
 <section id="salary-prediction-with-pyspark-ml" class="level3">
 <h3 class="anchored" data-anchor-id="salary-prediction-with-pyspark-ml">Salary prediction with PySpark ML</h3>
-<p><span class="meta">Big Data and Cloud Analytics, Boston University, 2026</span></p>
-<p>Predicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models.</p>
-<ul>
-<li>Random forest: test R² 0.54, RMSE about $46,000</li>
-<li>Experience has a strongly diminishing return, flattening after about 12 years</li>
-<li>Diagnosed and avoided the perfect multicollinearity in the starter template</li>
-</ul>
-<p><strong>Tools:</strong> PySpark MLlib, AWS EC2, Python, Seaborn, Quarto</p>
+<p><span class="where">Big Data and Cloud Analytics, Boston University, 2026</span></p>
+<p>Predicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models. The random forest reached a test R² of 0.54; experience showed a strongly diminishing return after about 12 years.</p>
+<p><span class="tools">PySpark MLlib, AWS EC2, Python, Seaborn, Quarto</span></p>
 </section>
 </div>
-<div class="project">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rf_feature_importance.png" class="img-fluid figure-img" alt="Bar chart of random forest feature importance, led by experience at 52.7 percent and education level at 18.9 percent"></p>
-<figcaption>Top 10 features by random forest importance</figcaption>
-</figure>
-</div>
+<div class="pcard" data-cat="data">
+<p><img src="images/rf_feature_importance.png" class="img-fluid" alt="Bar chart of random forest feature importance, led by experience at 52.7 percent"></p>
 <section id="what-drives-pay-in-job-postings" class="level3">
 <h3 class="anchored" data-anchor-id="what-drives-pay-in-job-postings">What drives pay in job postings</h3>
-<p><span class="meta">Big Data and Cloud Analytics, Boston University, 2026</span></p>
-<p>Feature importance from the random forest model. Required experience explains just over half of the model’s predictive power, followed by education level and occupation group, with computing roles paying the most.</p>
-<p>The regression models agree on the same drivers and add direction and size: about $19,000 for the first year of experience, falling to about $4,000 by year ten.</p>
+<p><span class="where">Big Data and Cloud Analytics, Boston University, 2026</span></p>
+<p>Required experience explains just over half of the model’s predictive power, followed by education level and occupation, with computing roles paying the most.</p>
+<p><span class="tools">Random forest, feature importance</span></p>
 </section>
 </div>
-<div class="project single">
+<div class="pcard" data-cat="data">
+<p><span class="metric">7,074</span></p>
+<p><span class="metric-label">job postings analysed</span></p>
 <section id="career-market-analysis-securities-and-investments" class="level3">
 <h3 class="anchored" data-anchor-id="career-market-analysis-securities-and-investments">Career market analysis: securities and investments</h3>
-<p><span class="meta">Group project, Big Data and Cloud Analytics, Boston University, 2026</span></p>
-<p>Analysed 7,074 job postings in the US securities and investments industry to identify the skills, locations and role variants that open entry into business intelligence and data analyst careers. I led site structure, integration and publishing, and documented four data defects we found and repaired in the source data.</p>
-<p><a href="https://fuadbbv.github.io/ad688-career-evaluation-group1/" class="btn btn-cv">Visit the project website</a></p>
+<p><span class="where">Group project, Boston University, 2026</span></p>
+<p>Which skills, locations and role variants open entry into BI and data analyst careers in US securities and investments. I led site structure, integration and publishing, and documented four data defects we repaired.</p>
+<p><a href="https://fuadbbv.github.io/ad688-career-evaluation-group1/">Visit the project website</a></p>
+<p><span class="tools">Python, pandas, Quarto, GitHub Pages</span></p>
 </section>
 </div>
+<div class="pcard" data-cat="data">
+<p><span class="metric">Mesa</span></p>
+<p><span class="metric-label">agent-based simulation</span></p>
+<section id="agent-based-financial-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="agent-based-financial-modeling">Agent-based financial modeling</h3>
+<p><span class="where">AI Agents and Automation, Boston University</span></p>
+<p>Built agent-based simulations to test how trading strategies and market participants interact, and analysed the simulated scenarios in Python.</p>
+<p><span class="tools">Python, Mesa, pandas, matplotlib</span></p>
 </section>
-<section id="professional-highlights" class="level2">
-<h2 class="anchored" data-anchor-id="professional-highlights">Professional highlights</h2>
-<div class="highlights">
-<ul>
-<li><strong>Executive reporting automation (MassMutual):</strong> automated recurring hiring, headcount and budget reports with the ServiceNow API, Power Automate and Tableau, saving about two days of manual work per reporting cycle.</li>
-<li><strong>Data integrity checker:</strong> designed an automated validation system that flags incomplete records, finds the accountable owner and sends targeted correction requests.</li>
-<li><strong>HaloITSM implementation (City of Portland):</strong> led the enterprise rollout of a service management platform for 1,500+ users without operational disruption.</li>
-<li><strong>UkrExchange:</strong> co-founded one of Ukraine’s first bitcoin-to-fiat exchanges and automated fiat settlement through local banking APIs.</li>
-</ul>
+</div>
+<div class="pcard" data-cat="pro">
+<p><span class="metric">~2 days</span></p>
+<p><span class="metric-label">of manual work saved per reporting cycle</span></p>
+<section id="executive-reporting-automation" class="level3">
+<h3 class="anchored" data-anchor-id="executive-reporting-automation">Executive reporting automation</h3>
+<p><span class="where">MassMutual, Global Business Services, 2026</span></p>
+<p>Automated recurring hiring, headcount and budget reporting: data pulled from the ServiceNow API, orchestrated in Power Automate and published as self-service Tableau dashboards for leadership.</p>
+<p><span class="tools">ServiceNow API, Power Automate, Tableau, Copilot</span></p>
+</section>
+</div>
+<div class="pcard" data-cat="pro">
+<p><span class="metric">Self-correcting</span></p>
+<p><span class="metric-label">data-quality loop</span></p>
+<section id="data-integrity-checker" class="level3">
+<h3 class="anchored" data-anchor-id="data-integrity-checker">Data integrity checker</h3>
+<p><span class="where">MassMutual, 2026</span></p>
+<p>Designed a validation system that checks every record against business rules, finds the accountable owner and emails a targeted correction request, with a KPI tracker measuring how fast gaps get fixed.</p>
+<p><span class="tools">Python, Excel, business-rule validation</span></p>
+</section>
+</div>
+<div class="pcard" data-cat="pro">
+<p><span class="metric">1,500+</span></p>
+<p><span class="metric-label">users moved to one ITSM platform</span></p>
+<section id="haloitsm-implementation" class="level3">
+<h3 class="anchored" data-anchor-id="haloitsm-implementation">HaloITSM implementation</h3>
+<p><span class="where">City of Portland, Maine, 2023–2026</span></p>
+<p>Led the enterprise rollout of a new service management platform: vendor engagement, workflow and catalog design, data migration, cutover and stabilization without operational disruption.</p>
+<p><span class="tools">HaloITSM, ITIL, change management</span></p>
+</section>
+</div>
+<div class="pcard" data-cat="pro">
+<p><span class="metric">CJIS</span></p>
+<p><span class="metric-label">compliant MFA for police systems</span></p>
+<section id="multi-factor-authentication-for-the-police-department" class="level3">
+<h3 class="anchored" data-anchor-id="multi-factor-authentication-for-the-police-department">Multi-factor authentication for the police department</h3>
+<p><span class="where">City of Portland, Maine</span></p>
+<p>Translated CJIS and FIPS 140-2 requirements into a phased rollout of hardware and mobile MFA for dispatchers and officers, with break-glass procedures and zero downtime during critical hours.</p>
+<p><span class="tools">CJIS, FIPS 140-2, identity management</span></p>
+</section>
+</div>
+<div class="pcard" data-cat="pro">
+<p><span class="metric">2013</span></p>
+<p><span class="metric-label">bitcoin-to-fiat, before the playbooks existed</span></p>
+<section id="ukrexchange" class="level3">
+<h3 class="anchored" data-anchor-id="ukrexchange">UkrExchange</h3>
+<p><span class="where">Co-founder and product manager</span></p>
+<p>Co-founded one of Ukraine’s first BTC-to-fiat exchanges. Designed trading and settlement workflows and integrated local banking APIs to automate fiat deposits and withdrawals.</p>
+<p><span class="tools">Order books, settlement, KYC/AML, banking APIs</span></p>
+</section>
+</div>
+<div class="pcard" data-cat="pro">
+<p><span class="metric">$500K+</span></p>
+<p><span class="metric-label">mining infrastructure delivered</span></p>
+<section id="crypto-mining-infrastructure" class="level3">
+<h3 class="anchored" data-anchor-id="crypto-mining-infrastructure">Crypto mining infrastructure</h3>
+<p><span class="where">Independent project, 2017–2022</span></p>
+<p>Took an ASIC and GPU mining operation from vendor sourcing and facility build-out to launch, with minute-level revenue and cost dashboards and a hosted-mining revenue stream.</p>
+<p><span class="tools">ASIC/GPU, mining pools, P&amp;L dashboards</span></p>
+</section>
+</div>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
+<script>
+(function () {
+  var buttons = document.querySelectorAll(".filters button");
+  var cards = document.querySelectorAll(".pcard");
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var f = btn.getAttribute("data-filter");
+      buttons.forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+      cards.forEach(function (c) {
+        c.hidden = !(f === "all" || c.getAttribute("data-cat") === f);
+      });
+    });
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -628,7 +694,7 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org">Quarto</a></p>
+<p>Built with <a href="https://quarto.org">Quarto</a> and published on GitHub Pages</p>
 </div>
   </div>
 </footer>
