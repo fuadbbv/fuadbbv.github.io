@@ -1,0 +1,60 @@
+---
+title: "Projects"
+---
+
+Selected work from my MS in Financial Management at Boston University, followed by highlights from my professional projects.
+
+## Academic projects
+
+::: {.project}
+![Actual versus predicted salary for three models](images/model_comparison.png){fig-alt="Four scatter plots comparing actual and predicted salaries for linear, polynomial and random forest models, plus a residual plot"}
+
+::: {}
+### Salary prediction with PySpark ML
+
+[Big Data and Cloud Analytics, Boston University, 2026]{.meta}
+
+Predicted annual salary for 9,300 US job postings with Spark on AWS EC2. I rebuilt the salary target from mixed hourly and annual pay, extracted required experience from posting text, and compared linear, polynomial and random forest models.
+
+- Random forest: test R² 0.54, RMSE about \$46,000
+- Experience has a strongly diminishing return, flattening after about 12 years
+- Diagnosed and avoided the perfect multicollinearity in the starter template
+
+**Tools:** PySpark MLlib, AWS EC2, Python, Seaborn, Quarto
+:::
+:::
+
+::: {.project}
+![Top 10 features by random forest importance](images/rf_feature_importance.png){fig-alt="Bar chart of random forest feature importance, led by experience at 52.7 percent and education level at 18.9 percent"}
+
+::: {}
+### What drives pay in job postings
+
+[Big Data and Cloud Analytics, Boston University, 2026]{.meta}
+
+Feature importance from the random forest model. Required experience explains just over half of the model's predictive power, followed by education level and occupation group, with computing roles paying the most.
+
+The regression models agree on the same drivers and add direction and size: about \$19,000 for the first year of experience, falling to about \$4,000 by year ten.
+:::
+:::
+
+::: {.project .single}
+::: {}
+### Career market analysis: securities and investments
+
+[Group project, Big Data and Cloud Analytics, Boston University, 2026]{.meta}
+
+Analysed 7,074 job postings in the US securities and investments industry to identify the skills, locations and role variants that open entry into business intelligence and data analyst careers. I led site structure, integration and publishing, and documented four data defects we found and repaired in the source data.
+
+[Visit the project website](https://fuadbbv.github.io/ad688-career-evaluation-group1/){.btn .btn-cv}
+:::
+:::
+
+## Professional highlights
+
+::: {.highlights}
+- **Executive reporting automation (MassMutual):** automated recurring hiring, headcount and budget reports with the ServiceNow API, Power Automate and Tableau, saving about two days of manual work per reporting cycle.
+- **Data integrity checker:** designed an automated validation system that flags incomplete records, finds the accountable owner and sends targeted correction requests.
+- **HaloITSM implementation (City of Portland):** led the enterprise rollout of a service management platform for 1,500+ users without operational disruption.
+- **UkrExchange:** co-founded one of Ukraine's first bitcoin-to-fiat exchanges and automated fiat settlement through local banking APIs.
+:::

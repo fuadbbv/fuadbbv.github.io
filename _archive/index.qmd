@@ -1,0 +1,33 @@
+---
+title: "Fuad Babaiev"
+subtitle: "Big Data and Cloud Analytics — MET AD688"
+date: "2026-09-05"
+format:
+  html:
+    theme: cosmo
+    toc: true
+---
+
+# Hello
+
+My name is Fuad and I am a student at Boston University, currently working on
+an MS in Financial Management with a concentration in AI applications.
+
+## Reproducible environment
+
+```{python}
+#| label: tbl-env
+#| tbl-cap: "Runtime environment"
+
+import platform
+import pandas as pd
+
+pd.DataFrame({
+    "component": ["Python", "Operating system", "Architecture"],
+    "value": [
+        platform.python_version(),
+        f"{platform.system()} {platform.release()}",
+        platform.machine(),
+    ],
+})
+```

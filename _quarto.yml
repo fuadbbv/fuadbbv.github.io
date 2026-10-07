@@ -1,21 +1,38 @@
 project:
   type: website
+  output-dir: _site
+  resources:
+    - files/
 
 website:
-  title: "fuadbbv.github.io"
+  title: "Fuad Babaiev"
+  site-url: https://fuadbbv.github.io
+  description: "Senior Project Manager working at the intersection of financial services, AI and automation."
   navbar:
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: About
+        href: index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: CV
+        href: cv.qmd
+      - text: Contact
+        href: contact.qmd
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/fuad-babaiev
+        aria-label: LinkedIn
+      - icon: github
+        href: https://github.com/fuadbbv
+        aria-label: GitHub
+  page-footer:
+    left: "© 2026 Fuad Babaiev"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
+    theme: flatly
     css: styles.css
-    toc: true
-
-
-
+    mainfont: "IBM Plex Sans"
+    toc: false
+    smooth-scroll: true
