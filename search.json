@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Senior Project and Program Manager delivering technology and business transformation in regulated environments: financial services, municipal government and fintech. My background combines enterprise governance, startup delivery with distributed engineering teams, and founder experience in crypto and logistics.\nDownload CV (PDF)\n\n  Your browser cannot display the PDF here.\n  Download the CV instead."
+    "text": "I am open to conversations about project and program management roles in fintech, digital assets and financial services, and about collaboration on AI and automation projects.\n\nEmail: fuadbabaiev@gmail.com\nLinkedIn: linkedin.com/in/fuad-babaiev\nGitHub: github.com/fuadbbv\nLocation: Boston, Massachusetts"
   },
   {
     "objectID": "projects.html",
@@ -28,11 +28,11 @@
     "text": "Professional highlights\n\n\nExecutive reporting automation (MassMutual): automated recurring hiring, headcount and budget reports with the ServiceNow API, Power Automate and Tableau, saving about two days of manual work per reporting cycle.\nData integrity checker: designed an automated validation system that flags incomplete records, finds the accountable owner and sends targeted correction requests.\nHaloITSM implementation (City of Portland): led the enterprise rollout of a service management platform for 1,500+ users without operational disruption.\nUkrExchange: co-founded one of Ukraine’s first bitcoin-to-fiat exchanges and automated fiat settlement through local banking APIs."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "I am open to conversations about project and program management roles in fintech, digital assets and financial services, and about collaboration on AI and automation projects.\n\nEmail: fuadbabaiev@gmail.com\nLinkedIn: linkedin.com/in/fuad-babaiev\nGitHub: github.com/fuadbbv\nLocation: Boston, Massachusetts"
+    "text": "Senior Project and Program Manager delivering technology and business transformation in regulated environments: financial services, municipal government and fintech. My background combines enterprise governance, startup delivery with distributed engineering teams, and founder experience in crypto and logistics.\nDownload CV (PDF)\n\n  Your browser cannot display the PDF here.\n  Download the CV instead."
   },
   {
     "objectID": "index.html",
